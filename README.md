@@ -30,7 +30,7 @@ A custom-built printer where the build plate is one of several swappable beds ci
 |---|---|
 | ![CAD render](images/bed-switcher/bed-switcher_CAD.png) | ![Finished build](images/bed-switcher/bed-switcher.jpg) |
 
-[▶ Watch the ejection cycle](images/bed-switcher/bed-switcher_working.mp4)
+[▶ Watch the ejection cycle](images/bed-switcher/bed-switcher_working.gif)
 
 **What worked:** Belt ejection, housing, frame.
 **What didn't:** Heavy linear rails caused backlash from friction. Ejection holes in the heated bed created cold spots. Electromagnetic bed retention was binary (gap or clamp, nothing in between).
@@ -46,7 +46,7 @@ The whole toolhead rides on precision linear rails; a docking station locks it i
 |---|---|
 | ![CAD render](images/Toolchanger-T1/Toolchanger-T1_CAD.png) | ![Finished build](images/Toolchanger-T1/Toolchanger-T1.jpg) |
 
-[▶ Watch the V1 dock](images/Toolchanger-T1/Toolchanger-T1_working.mp4)
+[▶ Watch the V1 dock](images/Toolchanger-T1/Toolchanger-T1_working.gif)
 
 **What worked:** The kinematic concept.
 **What didn't:** Any micro-misalignment caused the carriage to jam — and a jammed carriage could **drop the entire tool, hotend and stepper included, onto the print bed.** Open-loop control meant the printer had no way to detect a docking failure and would happily continue printing into the void. NEMA 17 motors on belt-driven Z needed a counterweight.
@@ -62,7 +62,7 @@ Threw out V1's catastrophic docking geometry. Kept the multi-tool vision, rebuil
 |---|---|
 | ![CAD render](images/Toolchanger-T2/Toolchanger-T2_CAD.png) | ![Finished build](images/Toolchanger-T2/Toolchanger-T2.jpg) |
 
-[▶ Watch the V2 swap](images/Toolchanger-T2/Toolchanger-T2_working.mp4)
+[▶ Watch the V2 swap](images/Toolchanger-T2/Toolchanger-T2_working.gif)
 
 **Upgrades from V1:**
 
