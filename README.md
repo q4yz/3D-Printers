@@ -10,7 +10,7 @@ I started with an **Ender 3** and a heavily modified **Ender 6**, which taught m
 
 ---
 
-## 📅 Timeline
+## Timeline
 
 | Project | Core idea | Drive | Key lesson |
 |---------|-----------|-------|------------|
@@ -22,7 +22,7 @@ I started with an **Ender 3** and a heavily modified **Ender 6**, which taught m
 
 ---
 
-## 🛏️ Bed-Switcher — Automatic Belt-Driven Bed Swapping
+## Bed-Switcher — Automatic Belt-Driven Bed Swapping
 
 A custom-built printer where the build plate is one of several swappable beds circulating on a belt-driven loop. Finished prints are ejected to a cooling station while a fresh, pre-heated bed indexes in — eliminating post-print removal entirely.
 
@@ -38,7 +38,7 @@ A custom-built printer where the build plate is one of several swappable beds ci
 
 ---
 
-## 🔧 Toolchanger V1 — Linear-Rail Carriage Interface
+##  Toolchanger V1 — Linear-Rail Carriage Interface
 
 The whole toolhead rides on precision linear rails; a docking station locks it in place. The promise: industrial-grade repeatability by reusing the motion rail as the locating surface.
 
@@ -54,7 +54,7 @@ The whole toolhead rides on precision linear rails; a docking station locks it i
 
 ---
 
-## 🛠️ Toolchanger V2 — CAN Bus & Modular Toolheads
+##  Toolchanger V2 — CAN Bus & Modular Toolheads
 
 Threw out V1's catastrophic docking geometry. Kept the multi-tool vision, rebuilt around closed-loop error detection, properly sized motors, and a radically simplified wiring architecture.
 
@@ -72,7 +72,7 @@ Threw out V1's catastrophic docking geometry. Kept the multi-tool vision, rebuil
 | Feedback | None (open loop) | Limit switches on every dock interface |
 | Tool wiring | Bundles per tool | **CAN bus — 4 wires for up to 6 tools** |
 | Drivers | Stock | TB6600 analog — loud, but functional |
-| Toolheads | Single extruder | Extruder + spindle + (planned) laser |
+| Toolheads | Extruder | Extruder + spindle + (planned) laser |
 
 **The CAN bus decision is the single design choice I'm most proud of.** Each toolhead carried its own MCU and exposed itself as a CAN node — adding a tool became a software change, not a rewiring job. That abstraction outlived V2's mechanics and became the backbone of V3.
 
@@ -80,15 +80,16 @@ Threw out V1's catastrophic docking geometry. Kept the multi-tool vision, rebuil
 
 ---
 
-## 🎯 Toolchanger V3 — Ball Screws, Final Iteration
+##  Toolchanger V3 — Ball Screws, Final Iteration
 
 V2's CAN architecture plus ball screws on every axis. Funded by my Zivildienst savings — this was the build where I refused to compromise on motion quality.
 
 | | |
 |---|---|
-| ![CAD render](images/Toolchanger-T3/Toolchanger-T3_CAD.png) | ![Finished build](images/Toolchanger-T3/Toolchanger-T2.jpg) |
+| 
+![CAD render](images/Toolchanger-T3/Toolchanger-T3_CAD.png) | ![Finished build](images/Toolchanger-T3/Toolchanger-T3.jpg) |
 
-> ⚠️ No V3-specific build photo or working video yet — the image above is currently a misnamed copy from V2.
+
 
 **Specs:**
 
@@ -101,7 +102,7 @@ V2's CAN architecture plus ball screws on every axis. Funded by my Zivildienst s
 
 ---
 
-## 🧭 5A — Five-Axis Non-Planar Test Platform
+##  5A — Five-Axis Non-Planar Test Platform
 
 A purpose-built 5-axis printer, designed from scratch as a testbed for non-planar slicing research. Most slicers force parts into stacks of 2D layers — a 5-axis machine can rotate the build platform or tool to deposit material along curved surfaces, enabling stronger parts and entirely new geometry.
 
@@ -109,13 +110,13 @@ A purpose-built 5-axis printer, designed from scratch as a testbed for non-plana
 |---|---|
 | ![CAD render](images/A5/A5_CAD.png) | ![Finished build](images/A5/A5_finished.jpg) |
 
-> ⚠️ No 5-axis motion video yet — suggested filename: `A5_5axis_motion.mp4`
+
 
 **Status:** Working research instrument, not a finished product. The constraint has always been time, not capability.
 
 ---
 
-## 🎯 Core Skills
+##  Core Skills
 
 | Firmware & Software | Mechanical & Hardware | Iterative Engineering |
 |---|---|---|
@@ -127,21 +128,18 @@ A purpose-built 5-axis printer, designed from scratch as a testbed for non-plana
 
 ---
 
-## 🖨️ Current Setup
+##  Current Setup
 
 For daily printing I use a **Bambu Lab P2S** — its software integration lets my family print without my involvement, which is a usability achievement I couldn't match in any of my custom builds. I keep the custom printers around as overflow capacity, for special jobs, and as a backup if the Bambu ever fails.
 
 ---
 
-## 💭 What I Took Away
+##  What I Took Away
 
 - **Fail safely, always.** V1's catastrophic tool-drop is the lesson that defined every redesign after it.
 - **Architecture outlives hardware.** The CAN bus abstraction from V2 became the backbone of V3.
 - **The last 20% takes 80% of the work.** Knowing when a machine has taught you what it can — and walking away to start the next one — is itself an engineering skill.
 - **Commercial products exist for a reason.** Standing on the shoulders of a polished integration is not surrendering; it's learning what "good" looks like.
 
----
 
-## 📜 License
 
-MIT — feel free to learn from my mistakes.
