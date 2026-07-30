@@ -86,8 +86,7 @@ V2's CAN architecture plus ball screws on every axis. Funded by my Zivildienst s
 
 | | |
 |---|---|
-| 
-![CAD render](images/Toolchanger-T3/Toolchanger-T3_CAD.png) | ![Finished build](images/Toolchanger-T3/Toolchanger-T3.jpg) |
+| ![CAD render](images/Toolchanger-T3/Toolchanger-T3_CAD.png) | ![Finished build](images/Toolchanger-T3/Toolchanger-T3.jpg) |
 
 
 
